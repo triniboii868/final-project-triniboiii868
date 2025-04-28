@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Scripts and charactersets needed for website -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub Official Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="index.js" defer></script>
+
+</head>
+
+<!-- Burger Menu  -->
+
+<body>
+    <div class="header">
+        <div class="header-content">
+            <img src="logo.png" alt="HelpHub Logo" class="header-logo">
+            <span class="header-title">United HelpHub Center</span>
+        </div>
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+    </div>
+    <div class="nav" id="navMenu">
+        <a href="#about">About</a>
+        <a href="#who-we-are">Services</a>
+        <a href="charities.html">Charities</a>
+        <a href="charity_profile.html">Featured Charities</a>
+    </div>
+
+    <!-- About Section with Image -->
+
+    <!-- About Section with Image (Improved) -->
+
+    <div class="about" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>ABOUT US</h2>
+                <p>
+                    At HelpHub, we believe that the power to change the world begins at home—with one person, one act of
+                    kindness, and one community at a time.
+                    Our platform is built to unite passionate volunteers with local charities, creating a vibrant
+                    ecosystem of interaction, generosity, and meaningful impact.
+                </p>
+                <p>
+                    Whether you're looking to donate your time, skills, or simply lend a helping hand, HelpHub makes it
+                    easy to connect with causes that matter to you.
+                    We partner with community organizations, nonprofits, and grassroots initiatives to open doors for
+                    real change—right where you live.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="logo.png" alt="About HelpHub" class="about-img-shadow">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="who-we-are" id="who-we-are">
+        <h2 class="section-title">Who Are We</h2>
+        <p class="section-description">
+            Gives insight of what HelpHub actually is and their mission statement, values, etc.
+        </p>
+
+        <div class="info-cards">
+            <div class="card">
+                <img src="mission.png" alt="Mission Icon" class="icon" />
+                <h3>Mission and Values</h3>
+                <p>Our mission is to bridge the gap between passionate volunteers and local charities, creating a
+                    network of support that strengthens communities.</p>
+            </div>
+            <div class="card">
+                <img src="vision.png" alt="Leadership Icon" class="icon" />
+                <h3>Leadership Team</h3>
+                <p>Meet the dedicated people leading HelpHub and driving our mission forward.</p>
+            </div>
+            <div class="card">
+                <img src="values.png" alt="Diversity Icon" class="icon" />
+                <h3>Diversity, Equity & Inclusion</h3>
+                <p>HelpHub fosters a diverse environment that is inclusive of everyone engaged in our humanitarian
+                    mission.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Our Work</h1>
+        <p>Join us in providing aid and relief to those in need.</p>
+        <a href="charities.html" class="volunteer-btn">Volunteer Now</a>
+
+        <!-- New Section for Images and Descriptions -->
+
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="relief.jpg" alt="Disaster Relief">
+                <p>Disaster Relief Efforts</p>
+            </div>
+            <div class="image-item">
+                <img src="blood.jpg" alt="Blood Donation">
+                <p>Blood Donation Drives</p>
+            </div>
+            <div class="image-item">
+                <img src="environment.png" alt="Community Health">
+                <p>Community Health Programs</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Frequently Asked Questions</h2>
+        <p>
+        <div class="card">
+            <h3>What is this website about?</h3>
+            <p>This platform provides information and services related to our organization, including resources and
+                support.</p>
+        </div>
+        <div class="card">
+            <h3>How can I contact support?</h3>
+            <p>You can reach out vi email at support@helphub.org or mobile number at
+                1(815)234-5678</p>
+        </div>
+        <div class="card">
+            <h3>Is my data secure?</h3>
+            <p>Yes, we implement industry-standard security practices to protect your information.</p>
+
+        </div>
+
+        <a href="info.html">
+            <button type="button"> More FAQs </button>
+        </a>
+    </div>
+
+    <!-- Keeping my script here for future use  -->
+    <button id="back-to-top" class="back-to-top">Back to Top</button>
+    <script src="index.js"></script>
+    <div class="footer">
+        <p>&copy; 2025 HelpHub Official Website. All rights reserved.</p>
+        <div>
+            <a href="#about">About Us</a>
+            <a href="info.html#faq">More FAQs</a>
+            <a href="info.html#terms">Terms of Service</a>
+        </div>
+        <div class="social-icons">
+            <a href="tel:+1234567890" target="_blank" aria-label="Phone"><i class="fas fa-phone"></i></a>
+            <a href="https://www.instagram.com/helphub" target="_blank" aria-label="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:contact@example.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>

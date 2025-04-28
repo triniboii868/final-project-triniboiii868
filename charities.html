@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CharityHub - HelpHub Official Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@latest"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeoF0DV8_hku1FtjBPjEWB2ePswnqB8Pc&callback=console.debug&libraries=maps,marker&v=beta">
+        </script>
+</head>
+
+<body>
+    <div class="header">
+        United Helphub Center
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+    </div>
+
+    <div class="nav" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="charities.html">Charities</a>
+        <a href="charity_profile.html">Featured Charities</a>
+    </div>
+
+    <div class="charity-section" id="charityhub">
+        <h2>Featured Charities</h2>
+
+        <!-- Charity Gallery Section -->
+        <div class="charity-gallery">
+            <div class="charity-item">
+                <img src="apch.png" alt="A Place Called Home">
+                <p><strong>A Place Called Home</strong></p>
+                <p>A Place Called Home provides a safe nurturing environment with programs in arts,
+                    education and wellness for the young people in Los Angeles to help them improve
+                    their economic conditions and develop healthy, and purposeful lives.</p>
+                <a href="https://apch.org/">View Charity Profile</a>
+            </div>
+
+            <div class="charity-item">
+                <img src="salvation.png" alt="Salvation Army USA">
+                <p><strong>Salvation Army USA</strong></p>
+                <p>The Salvation Army, an international movement, is an evangelical part of the universal Christian
+                    Church. Its message is based on the Bible. Its ministry is motivated by the love of God. Its mission
+                    is to preach the gospel of Jesus Christ and to meet human needs in His name without discrimination.
+                </p>
+                <a href="https://www.salvationarmyusa.org/">View Charity Profile</a>
+            </div>
+
+            <div class="charity-item">
+                <img src="gcfd1.png" alt="Greater Chicago Food Depository">
+                <p><strong>Greater Chicago Food Depository</strong></p>
+                <p>RMHC programs and services help alleviate some financial burdens for families along their child’s
+                    healthcare journey. Last year alone, we helped families save $736 million in lodging and meal
+                    expenses.</p>
+                <a href="charity3-profile.html">View Charity Profile</a>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div id="map" class="map-style">
+            <gmp-map id="gmpMap" zoom="4" map-id="DEMO_MAP_ID">
+                <gmp-advanced-marker id="gmpMarker" title="My location"></gmp-advanced-marker>
+            </gmp-map>
+        </div>
+
+        <!-- Location Search Form -->
+        <div class="container">
+            <h2>Find Charities Near You</h2>
+            <gmpx-place-picker id="placePicker" placeholder="Enter city or zip code"></gmpx-place-picker>
+        </div>
+
+        <!-- Resources Section -->
+        <div class="resources-section" id="resources">
+            <h2>Resources</h2>
+            <div class="resources-gallery">
+                <div class="resource-item">
+                    <div class="resource-title">
+                        <h3>About Non-profits</h3>
+                    </div>
+                    <div class="resource-description">
+                        <p>Nonprofits have tremendous impact in each of our communities every day, though it may not be
+                            seen prevalently, at least one family's living conditions are improved daily. Find out more
+                            about
+                            what makes nonprofits unique.</p>
+                    </div>
+                    <a href="https://www.councilofnonprofits.org/about-americas-nonprofits" target="_blank">Read
+                        More</a>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-title">
+                        <h3>Charity vs Philanthropy</h3>
+                    </div>
+                    <div class="resource-description">
+                        <p>Charity offers immediate help to those in need, while philanthropy focuses on long-term
+                            solutions
+                            to societal issues. Charity addresses short-term relief, and philanthropy aims for lasting
+                            change. Both contribute to a better world in different ways.</p>
+                    </div>
+                    <a href="https://givingcompass.org/article/charity-versus-philanthropy#:~:text=Charity%20can%20take%20the%20form,philanthropists%20participate%20in%20advocacy%20work."
+                        target="_blank">Read More</a>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-title">
+                        <h3>Charity & Philanthropy News</h3>
+                    </div>
+                    <div class="resource-description">
+                        <p>​The CNBC Philanthropy section covers a range of topics related to charitable giving, social
+                            impact, and corporate responsibility. It features news, profiles, and analyses of
+                            philanthropic
+                            initiatives by individuals, foundations, and corporations</p>
+                    </div>
+                    <a href="https://www.cnbc.com/philanthropy/" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- External JS -->
+        <script src="index.js"></script>
+        <button id="back-to-top" class="back-to-top">Back to Top</button>
+        <div class="footer">
+            <p>&copy; 2025 HelpHub Official Website. All rights reserved.</p>
+
+            <div class="footer-links">
+                <a href="info.html#terms">Terms of Service</a>
+                <a href="info.html#faq">FAQs</a>
+                <a href="info.html#privacy">Privacy Policy</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="tel:+1234567890" target="_blank" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                <a href="https://www.instagram.com/helphub" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://mail.yahoo.com/" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Charity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navMenu");
+            menu.classList.toggle("show-menu");
+        }
+    </script>
+    <script src="charity_profile.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        Charity Profiles
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+    </div>
+
+    <div class="nav" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="charities.html">Charities</a>
+        <a href="info.html">FAQs</a>
+    </div>
+    </div>
+
+    <div class="hero">
+        <h1>Charity Profile</h1>
+        <p>Charity Description</p>
+        <a class="volunteer-btn" id="volunteerNowBtn" href="javascript:void(0);">Volunteer Now</a>
+    </div>
+
+    <div class="who-we-are">
+        <h2 class="section-title">Our Mission</h2>
+        <p class="section-description">This piece of information will be updated in the last part of the assignment
+            which will be entailed in the missio/value statement of specified charity.</p>
+    </div>
+
+    <div class="who-we-are">
+        <h2 class="section-title">Our Impact</h2>
+        <div class="info-cards">
+            <div class="card">
+                <h3>1000+</h3>
+                <p>Families Helped</p>
+            </div>
+            <div class="card">
+                <h3>50+</h3>
+                <p>Community Programs</p>
+            </div>
+            <div class="card">
+                <h3>200+</h3>
+                <p>Active Volunteers</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="who-we-are">
+        <h2 class="section-title">What Volunteers Say</h2>
+        <div id="testimonial-box" class="card" style="max-width: 600px; margin: auto; text-align: center;">
+            <p id="testimonial-text">Loading testimonials...</p>
+            <p id="testimonial-author" style="font-style: italic; margin-top: 10px;"></p>
+        </div>
+    </div>
+
+    <div class="who-we-are">
+        <h2 class="section-title">Contact Information</h2>
+        <div class="card" style="margin: auto;">
+            <p><strong>Email:</strong> contact@charity.org</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Address:</strong> 123 Charity Street, Cityville, ST 12345</p>
+            <p><strong>Website:</strong> <a href="#">www.helpcharities.org</a></p>
+        </div>
+    </div>
+
+    <div class="who-we-are">
+        <h2 class="section-title">Volunteer Opportunities</h2>
+        <div class="info-cards">
+            <div class="card">
+                <h3>Food Bank Assistant</h3>
+                <p>Help sort and distribute food to families in need.</p>
+                <p><strong>Time:</strong> 4-6 hrs/week</p>
+                <p><strong>Requirements:</strong> Must be 18+ years old</p>
+            </div>
+            <div class="card">
+                <h3>Youth Mentor</h3>
+                <p>Guide and support young people in our community.</p>
+                <p><strong>Time:</strong> 2-3 hrs/week</p>
+                <p><strong>Requirements:</strong> Background check required</p>
+            </div>
+        </div>
+    </div>
+    <div class="who-we-are" id="volunteer-form">
+        <h2 class="section-title">Volunteer Application</h2>
+        <div class="card" style="max-width: 600px; margin: auto;">
+            <form class="volunteer-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input id="name" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="tel">
+                </div>
+                <div class="form-group">
+                    <label for="skills">Skills & Experience</label>
+                    <textarea id="skills" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="availability">Availability</label>
+                    <input id="availability" type="text">
+                </div>
+                <div style="text-align: center; margin-top: 20px;">
+                    <button type="submit" class="volunteer-btn">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Keeping my script here for future use  -->
+    <button id="back-to-top" class="back-to-top">Back to Top</button>
+    <script src="index.js"></script>
+    <div class="footer">
+        <p>&copy; 2025 HelpHub Official Website. All rights reserved.</p>
+        <div>
+            <a href="info.html#terms">Terms of Service</a>
+            <a href="info.html#faq">FAQs</a>
+            <a href="info.html#privacy">Privacy Policy</a>
+        </div>
+        <div class="social-icons">
+            <a href="tel:+1234567890" target="_blank" aria-label="Phone"><i class="fas fa-phone"></i></a>
+            <a href="https://www.instagram.com/helphub" target="_blank" aria-label="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:contact@example.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+</body>
+
+</html>
